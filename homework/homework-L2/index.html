@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script
       src="https://kit.fontawesome.com/17191b29a1.js"
       crossorigin="anonymous"
@@ -14,40 +21,42 @@
     <title>Homework Lecture-02</title>
   </head>
   <body>
-    <h1>Learning Platforms & Technologies</h1>
-
-    <ul type="none">
-      <li>
-        <a href="#">
-          <i class="fa-brands fa-github" style="font-size: 25px"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-brands fa-free-code-camp" style="font-size: 22px"> </i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-brands fa-vuejs" style="font-size: 22px"></i>
-        </a>
-      </li>
-      <li>
-        <a href="">
-          <i class="fa-brands fa-bootstrap" style="font-size: 20px"></i>
-        </a>
-      </li>
-    </ul>
+    
+    <div class="nav">
+      <ul type="none">
+        <li>
+          <button><a href="#gitHub">GitHub</a></button>
+        </li>
+        <li>
+          <button><a href="#freeCodeCamp">freeCodeCamp</a></button>
+        </li>
+        <li>
+          <button><a href="#vueJs">Vue.js</a></button>
+        </li>
+        <li>
+          <button><a href="#bootstrap">Bootstrap</a></button>
+        </li>
+      </ul>
+    </div>
+    <div class="headTop">
+      <h1 id="top">Learning Platforms & Technologies</h1>
+    </div>
 
     <hr />
-    <div>
-      <h2>GitHub</h2>
+
+    <div class="headGit">
+      <h2 id="gitHub">
+        <i class="fa-brands fa-github" style="font-size: 30px"></i>GitHub
+      </h2>
       <ul>
         <li>About</li>
         <li>History</li>
         <li>Education Program</li>
       </ul>
-      <hr />
+    </div>
+    <hr />
+
+    <div class="info-github">
       <h3>About</h3>
       <p>
         <strong>GitHub</strong>, is an Internet hosting service for software
@@ -77,16 +86,32 @@
         , and <em>Unreal Engine</em> to launch the program.
       </p>
     </div>
+    <div class="info-github">
+      <img src="images/git-enterprise.png" alt="" />
+    </div>
+    <br />
+    <a href="#top"
+      >Back to the Top
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <!-- TODO: I need to add links back to the top with arrow-->
     <hr />
     <div>
-      <h2>freeCodeCamp</h2>
+      <h2 id="freeCodeCamp">
+        <i class="fa-brands fa-free-code-camp" style="font-size: 22px"> </i
+        >freeCodeCamp
+      </h2>
       <ul>
         <li>About</li>
         <li>History</li>
         <li>Syllabus</li>
       </ul>
-      <hr />
+    </div>
+    <hr />
+    <div class="info-camp">
+      <img src="images/freeCodeCamp.png" alt="" />
+    </div>
+    <div class="info-camp">
       <h3>About</h3>
       <p>
         <strong>freeCodeCamp</strong>(also referred to as Free Code Camp) is a
@@ -131,23 +156,34 @@
         >
       </p>
     </div>
+
+    <br />
+    <a href="#top"
+      >Back to the Top
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
     <!-- TODO: I need to add links back to the top with arrow-->
     <hr />
     <div>
-      <h2>Vue.js</h2>
+      <h2 id="vueJs">
+        <i class="fa-brands fa-vuejs" style="font-size: 22px"></i>ue.js
+      </h2>
       <ul>
         <li>About</li>
         <li>History</li>
         <li>Features</li>
       </ul>
-      <hr />
+    </div>
+    <hr />
+    <div class="info-vue">
       <h3>About</h3>
       <p>
         <strong>Vue.js</strong> (commonly referred to as Vue; pronounced "view")
         is an open-source model&#45;view&#45;viewmodel front end
         <em>JavaScript</em> framework for building user interfaces and
-        single-page applications.It was created by Evan You, and is maintained
-        by him and the rest of the active core team members. <br />
+        single-page applications.It was created by <strong>Evan You</strong>,
+        and is maintained by him and the rest of the active core team members.
+        <br />
         <strong>Vue.js</strong> features an incrementally adaptable architecture
         that focuses on declarative rendering and component composition. The
         core library is focused on the view layer only.Advanced features
@@ -161,9 +197,10 @@
       <h3>History</h3>
       <p>
         <strong>Vue</strong> was created by <em>Evan You</em> after working for
-        Google using AngularJS in several projects. He later summed up his
-        thought process: The first source code commit to the project was dated
-        July 2013, and Vue was first released the following February, in 2014.
+        <em>Google</em> using <em>AngularJS</em> in several projects. He later
+        summed up his thought process: The first source code commit to the
+        project was dated July 2013, and Vue was first released the following
+        February, in 2014.
       </p>
       <figure>
         <blockquote cite="https://en.wikipedia.org/wiki/Vue.js">
@@ -176,37 +213,124 @@
       </figure>
       <h3>Features</h3>
       <p>
-        <strong>Vue</strong> components extend basic <em>HTML</em> elements to encapsulate reusable code.
-        At a high level, components are custom elements to which the Vue's
-        compiler attaches behavior. In Vue, a component is essentially a Vue
-        instance with pre-defined options.The code snippet below contains
-        an example of a Vue component. The component presents a button and
-        prints the number of times the button is clicked:
+        <strong>Vue</strong> components extend basic <em>HTML</em> elements to
+        encapsulate reusable code. At a high level, components are custom
+        elements to which the Vue's compiler attaches behavior. In Vue, a
+        component is essentially a Vue instance with pre-defined options.The
+        code snippet below contains an example of a Vue component. The component
+        presents a button and prints the number of times the button is clicked:
       </p>
-    <!--TODO: I need to add img with the example of the code-->
-
     </div>
-    <!-- TODO: I need to add links back to the top with arrow-->
-    <hr>
-    <h2>Bootstrap</h2>
-    <ul>
+    <div class="info-vue">
+      <img class="vue-img" src="images/vue-js-code.png" alt="" />
+    </div>
+    <br />
+    <a href="#top"
+      >Back to the Top
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+
+    <hr />
+    <div>
+      <h2 id="bootstrap">
+        <i class="fa-brands fa-bootstrap" style="font-size: 20px"></i>Bootstrap
+      </h2>
+      <ul>
         <li>About</li>
         <li>History</li>
         <li>Features</li>
       </ul>
-      <hr>
-      <h3>About</h3>
+    </div>
 
-      <!--Continue from here-->
-      
+    <hr />
+
+    <div class="info-boot">
+      <h3>About</h3>
+      <p>
+        <strong>Bootstrap</strong> is a free and open-source
+        <em>CSS</em> framework directed at responsive, mobile-first front-end
+        web development. It contains <em>HTML, CSS</em> and (optionally)
+        <em>JavaScript</em>-based design templates for typography, forms,
+        buttons, navigation, and other interface components. As of July 2022,
+        <strong>Bootstrap</strong> is the eighth most starred project on
+        <em>GitHub</em>, with over 158,000 stars.
+      </p>
+
       <h3>History</h3>
+      <p>
+        <strong>Bootstrap</strong>, originally named
+        <strong>Twitter Blueprint</strong>, was developed by
+        <em>Mark Otto</em> and <em>Jacob Thornton</em> at
+        <strong>Twitter</strong> as a framework to encourage consistency across
+        internal tools. Before <strong>Bootstrap</strong> , various libraries
+        were used for interface development, which led to inconsistencies and a
+        high maintenance burden. According to Otto: A super small group of
+        developers and I got together to design and build a new internal tool
+        and saw an opportunity to do something more. Through that process, we
+        saw ourselves build something much more substantial than another
+        internal tool. Months later, we ended up with an early version of
+        <strong>Bootstrap</strong> as a way to document and share common design
+        patterns and assets within the company.After a few months of development
+        by a small group, many developers at <strong> Twitter</strong> began to
+        contribute to the project as a part of Hack Week, a hackathon-style week
+        for the <strong>Twitter</strong> development team. It was renamed from
+        <strong>Twitter Blueprint</strong> to <strong>Bootstrap</strong> and
+        released as an open-source project on August 19, 2011.It has continued
+        to be maintained by <em>Otto, Thornton,</em> a small group of core
+        developers, and a large community of contributors.
+      </p>
       <h3>Features</h3>
+      <p>
+        <strong>Bootstrap</strong> is an <em>HTML, CSS</em> &
+        <em>JS Library</em> that focuses on simplifying the development of
+        informative web pages (as opposed to web apps). The primary purpose of
+        adding it to a web project is to apply Bootstrap's choices of color,
+        size, font and layout to that project. As such, the primary factor is
+        whether the developers in charge find those choices to their liking.
+        Once added to a project, <strong>Bootstrap</strong> provides basic style
+        definitions for all HTML elements. The result is a uniform appearance
+        for prose, tables and form elements across web browsers. In addition,
+        developers can take advantage of <em>CSS</em> classes defined in
+        <strong>Bootstrap</strong> to further customize the appearance of their
+        contents. For example,<strong> Bootstrap</strong>
+        has provisioned for light- and dark-colored tables, page headings, more
+        prominent pull quotes, and text with a highlight.
+      </p>
+    </div>
+    <div class="info-boot">
+      <img src="images/bootstrap.png" alt="" />
+    </div>
+    <hr />
     <h4>For more information click the links below</h4>
-    <ul type="none" >
-        <li><a href=""></a>GitHub</li>
-        <li><a href=""></a>freeCodeCamp</li>
-        <li><a href=""></a>Vue.js</li>
-        <li><a href=""></a>Bootstrap</li>
+    <ul type="none">
+      <li><a href="https://github.com/" target="_blank">GitHub</a></li>
+      <li>
+        <a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a>
+      </li>
+      <li><a href="https://vuejs.org/" target="_blank">Vue.js</a></li>
+      <li><a href="https://getbootstrap.com/" target="_blank">Bootstrap</a></li>
     </ul>
+    <hr />
+    <a href="#top"
+      >Back to the Top
+      <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    <hr />
+    <div class="footer">
+      <div class="footer-info">
+        <p>&copy; Made by Stoyanov</p>
+      </div>
+      <div class="footer-info">
+        <ul>
+          <li><a href="https://www.linkedin.com/in/ognyan-stoyanov-573854246" target="_blank" >
+            <i class="fa-brands fa-linkedin"></i>
+          </a></li>
+          <li><a href="https://github.com/mishelov" target="_blank" >
+            <i class="fa-brands fa-github"></i>
+          </a></li>
+          
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
