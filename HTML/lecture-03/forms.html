@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Lecture-03 Forms</title>
   </head>
   <body>
     <fieldset>
@@ -45,7 +45,7 @@
             <div>
                 <label for="email">Email</label>
                 <br>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" value="ors@gmail.com" disabled>
             </div>
             <br>
             <div>
@@ -55,7 +55,7 @@
                     <input type="checkbox" name="checkboxOne" id="checkboxOne">You are under 18 yo.
                 </label>
                 <br>
-                <input type="checkbox" name="checkboxTwo" id="checkboxTwo">
+                <input type="checkbox" name="checkboxTwo" id="checkboxTwo" checked>
                 <label for="checkboxTwo">Subscribe</label>
             </div>
             <br>
@@ -91,6 +91,24 @@
                 Write something about you...
                 <br>
                 <textarea name="aboutYou" id="" cols="30" rows="10" maxlength="1000" placeholder="About you.."></textarea>
+            </div>
+            <div>
+              Choose location: <br>
+              <select name="location">
+                <option value="empty">- Choose place -</option>
+                <optgroup label="cities">
+                  <option value="varna">Varna</option>
+                  <option value="burgas" selected>Burgas</option>
+                  <option value="kaspichan">Kaspichan</option>
+                  <option value="gornaOryahovica">Gorna Oryahovica</option>
+                </optgroup>
+               <optgroup label="villiges">
+                <option value="Krali Marko">Krali Marko</option>
+                <option value="Chernogorovo">Chernogorovo</option>
+                <option value="Ivaylo">Ivaylo</option>
+                <option value="Malo Konare">Malo Konare</option>
+               </optgroup>
+              </select>
             </div>
             <button type="submit">Submit</button>
             <button type="reset">Cancel</button>

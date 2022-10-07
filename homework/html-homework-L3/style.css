@@ -1,0 +1,20 @@
+h1 {
+    text-align: center;
+    color: cadetblue;
+}
+th {
+    color: rgb(70, 92, 93);
+}
+table {
+    margin: auto;
+    text-align: center;
+    width: 500px;
+    height: 300px;
+    border-collapse: collapse;
+    background-color: rgb(204, 224, 224);
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+

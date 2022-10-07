@@ -1,0 +1,29 @@
+h1 {
+    color: rgb(167, 227, 15);
+
+}
+
+#main-logo {
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(107, 226, 226);
+}
+
+.blog-post {
+    border: 3px solid rgb(102, 0, 255);
+    color: rgb(54, 97, 69);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 10px;
+}
+.blog-post h3 {
+    text-decoration: underline;
+    background-color: indigo;
+    color: white;
+}
+
+.featured-post {
+    color: gold;
+}
