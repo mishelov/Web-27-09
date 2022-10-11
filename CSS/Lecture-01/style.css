@@ -1,0 +1,60 @@
+html {
+    font-size: 16px;
+}
+body {
+    font-family: sans-serif;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Silkscreen', cursive;
+    color: rgb(167, 227, 15);
+    font-weight: normal;
+    
+}
+
+
+#main-logo {
+    font-size: 2rem;
+    font-size: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(107, 226, 226);
+}
+
+.blog-post {
+    border: 3px solid rgba(163, 116, 233, 0.248);
+    color: rgb(54, 97, 69);
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: justify;
+    padding: 10px;
+}
+.blog-post h3 {
+    text-decoration: underline;
+    background-color: indigo;
+    color: white;
+}
+
+.featured-post {
+    color: gold;
+}
+
+.main-nav ul {
+    list-style: none;
+}
+.main-nav li {
+    display: inline;
+    
+
+}
+.main-nav ul li a {
+    text-decoration: none;
+}
+.main-nav a {
+    background-color: coral;
+    color: white;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 20px;
+}

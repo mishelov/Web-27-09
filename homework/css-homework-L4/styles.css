@@ -1,0 +1,45 @@
+body {  
+   background-color: rgb(155, 231, 231);
+   font-family: 'Roboto', sans-serif;
+}
+div {
+    width: 500px;
+    margin: auto;
+    border-radius: 20px;
+    text-align: center;
+    background-color: aquamarine;
+  
+}
+
+.end input {
+    margin-left: 20px;
+}
+input {
+    
+    border: none;
+    border-radius: 5px;
+}
+
+textarea {
+    border: none;
+    border-radius: 5px;
+}
+option {
+    background-color: rgb(168, 202, 231);
+}
+.input-btn {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(224, 234, 140);
+}
+.input-btn:hover {
+    opacity: 0.4;
+    cursor: pointer;
+}
+.input-btn:active {
+    
+    opacity: 0.9;
+}

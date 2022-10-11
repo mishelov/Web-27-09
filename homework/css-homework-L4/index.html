@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Homework Lecture 4</title>
+  </head>
+  <body>
+    <div>
+      <form action="" method="post">
+        <h1>New Event</h1>
+        <h2 id="eventName">Event Name</h2>
+        <h3>Discription</h3>
+        <textarea
+          name="event-discription"
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Event Description..."
+        ></textarea>
+        <h3>Dates and Time</h3>
+        <div class="beginn">
+          <label for="beginn">Beginning</label>
+          <input type="datetime-local" name="beginning-date-time" id="beginn" />
+        </div>
+        <div class="end">
+          <label for="end">Ending</label>
+          <input type="datetime-local" name="ending-date-time" id="end" />
+        </div>
+        <h3>Duration</h3>
+        <select name="choose-duration" id="duration">
+          <optgroup>
+            <option value="empty">- Choose Duration -</option>
+            <option value="one-day-package">1 day Package</option>
+            <option value="two-days-package">2 days Package</option>
+            <option value="three-days-package">3 days Package</option>
+          </optgroup>
+        </select>
+        <h3>Suitable for</h3>
+        <div>
+          <input type="radio" name="suitable-one" id="suitable-one" />
+          <label class="suit-one" for="suitable-one">Single visitors</label>
+          <input type="radio" name="suitable-two" id="suitable-two" />
+          <label class="suit-two" for="suitable-two">Group visitors</label>
+          <input type="radio" name="suitable-three" id="suitable-three" />
+          <label class="suit-three" for="suitable-three">Journalists</label>
+        </div>
+        <h3>Tags</h3>
+        <div>
+          <input type="checkbox" name="tag-one" id="tag-on" />
+          <label class="tag-one" for="tag-on">Whisky Fest</label>
+          <input type="checkbox" name="tag-two" id="tag-two" />
+          <label class="tag-two" for="tag-two">Concert</label>
+          <input type="checkbox" name="tag-three" id="tag-three" />
+          <label class="tag-three" for="tag-three">Theater</label>
+          <input type="checkbox" name="tag-four" id="tag-four" />
+          <label class="tag-four" for="tag-four">Technologies Forum</label>
+        </div>
+        <div>
+          <input
+            class="input-btn"
+            type="submit"
+            name="submit-input"
+            id="new-event"
+            value="New Eevent"
+          />
+          <input
+            class="input-btn"
+            type="reset"
+            name="reset-input"
+            id="reset-form"
+            value="Reset Form"
+          />
+        </div>
+      </form>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="set-event-name.js"></script>
+  </body>
+</html>
