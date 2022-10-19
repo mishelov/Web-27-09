@@ -1,0 +1,81 @@
+.main-card {
+    border: 2px solid rgb(173, 167, 167);
+    width: fit-content;
+    border-radius: 12px;
+    font-family: 'Montserrat', sans-serif;
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-img img {
+    border-top-left-radius:10px;
+    border-top-right-radius: 10px;
+    width: 400px;
+}
+
+/* Card article */
+.personal-photo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+    margin-right: 15px;
+    margin-top: 10px;
+}
+.personal-photo img:active {
+    box-shadow: rgba(58, 58, 61, 0.308) 0px 7px 29px 0px;
+}
+.personal-photo:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+.info {
+    margin-left: 15px;
+    margin-top: -15px;
+}
+.info h2 {
+    margin-bottom: -10px;
+    font-weight: 700;
+    font-size: 30px;
+}
+.info p {
+    margin-bottom: -10px;
+    color: rgb(92, 88, 88);
+    font-weight: 500;
+}
+hr {
+    margin-top: 20px;
+    color:rgb(173, 167, 167);
+    width: 370px;
+}
+/* Card footer */
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin-top: -10px;
+}
+.card-footer p{
+    margin-right: 15px;
+    color:rgb(173, 167, 167);
+    text-align: right;
+    font-weight: 500;
+}
+button {
+    padding: 8px;
+    border-radius: 5px;
+    margin-left: 15px;
+    border: 3px solid black;
+    font-weight: bold;
+    background-color: white;
+}
+
+button:hover {
+    background-color: rgb(222, 222, 222);
+    cursor: pointer;
+}
+button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}

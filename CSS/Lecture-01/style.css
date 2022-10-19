@@ -1,9 +1,19 @@
 html {
+    scroll-behavior: smooth;
     font-size: 16px;
 }
 body {
     font-family: sans-serif;
-    
+    margin: 0;
+    background: url('images/moroccan-flower-dark.webp');
+}
+#site {
+    width: 1000px;
+    margin: 0 auto;
+    background-color: rgb(66, 186, 216);
+    border-radius: 10px;
+    padding: 50px 20px;
+    box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -15,21 +25,29 @@ h1, h2, h3, h4, h5, h6, p {
 
 
 #main-logo {
-    font-size: 2rem;
+    float: left;
     font-size: 30px;
     text-decoration: none;
     font-weight: bold;
     color: rgb(107, 226, 226);
+    margin: auto;
 }
-
+.blog-post-row {
+    display: flex;
+    gap: 10px;
+    
+}
 .blog-post {
-    border: 3px solid rgba(163, 116, 233, 0.248);
+    position: relative;
+    border: 3px solid rgba(224, 25, 15, 0.248);
     color: rgb(54, 97, 69);
     margin-bottom: 5px;
     border-radius: 5px;
-    text-align: justify;
-    padding: 10px;
+    flex: 1;
+    padding: 10px 20px;
+    box-sizing: border-box;
 }
+
 .blog-post h3 {
     text-decoration: underline;
     background-color: indigo;
@@ -39,22 +57,54 @@ h1, h2, h3, h4, h5, h6, p {
 .featured-post {
     color: gold;
 }
-
+.label-new {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    color: white;
+    background-color: rgba(207, 140, 140, 0.779);
+    padding: 5px;
+    border-radius: 20%;
+    text-transform: uppercase;
+}
+.main-nav {
+    float: right;
+}
 .main-nav ul {
-    list-style: none;
+    list-style: none;    
 }
 .main-nav li {
-    display: inline;
-    
+    display: inline-block;
+    margin-right: 20px;
 
 }
 .main-nav ul li a {
     text-decoration: none;
 }
 .main-nav a {
+    display: inline-block;
     background-color: coral;
     color: white;
-    margin-left: 5px;
     padding: 10px;
     border-radius: 20px;
+}
+
+.main-nav a:hover {
+    background-color: blue;
+}
+
+.main-nav a:active {
+    background-color: rgb(123, 255, 0);
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px;
+    border-radius: 40px;
+    background-color: antiquewhite;
+
 }

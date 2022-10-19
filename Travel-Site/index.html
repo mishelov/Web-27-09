@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container container-flex">
+        <a class="main-logo" href="index.html">
+          <img src="images/Logo.png" alt="Soft Academy Travel" />
+        </a>
+        <nav class="main-nav">
+          <ul type="none">
+            <li class="nav-home"><a href="#">Home</a></li>
+            <li><a href="#">Travel Guide</a></li>
+            <li><a href="#">Favorites</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="main-header-placeholder"></div>
+    <div class="container main-content">
+      <aside class="sidebar">
+        <div class="form-one">
+          <label for="">Destination</label>
+          <input
+            type="search"
+            name="destination"
+            id="destination"
+            placeholder="Search for destination here..."
+          />
+        </div>
+        <div class="form-two">
+          <label for="select">Categories</label>
+          <br />
+          <select name="All categories" id="">
+            <optgroup>
+              <option value="All categories">All categories</option>
+              <option value="v1">v1</option>
+              <option value="v2">v2</option>
+              <option value="v3">v3</option>
+              <option value="v4">v4</option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="form-three">
+          <label for="">Price range</label>
+          <input type="range" name="range" id="range" />
+        </div>
+        <div class="form-four">
+          <label for="">Dates of the trip</label>
+          <input type="date" name="" id="" />
+          <input type="date" name="" id="" />
+        </div>
+      </aside>
+      <main>
+        <div class="photo-content">
+          <div class="left-content"></div>
+          <div class="right-content">
+            <div class="right-content-one">
+              <div class="img-one img-t"></div>
+              <div class="img-two img-t"></div>
+            </div>
+            <div class="right-content-two">
+              <div class="img-three img-t"></div>
+              <div class="img-four img-t"></div>
+            </div>
+          </div>
+        </div>
+        <div class="most-popular">
+          <h2>Most popular destinations this summer:</h2>
+          <button class="btn-one btn">London, Great Britain</button>
+          <button class="btn-two btn">Dubai, UAE</button>
+          <button class="btn-three btn">Plovdiv, Bulgaria</button>
+          <button class="btn-four btn">Burgas, Bulgaria</button>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
