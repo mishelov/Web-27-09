@@ -10,9 +10,17 @@ a {
     text-decoration: none;
     color: #5CB5B0;
 }
+a:hover {
+    color: #275250;
+}
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    margin: 0;
+    font-size: 2rem;
 }
 
 .container {
@@ -76,10 +84,8 @@ h1, h2, h3, h4, h5, h6 {
     gap: 30px;
 }
 .main-content main {
-    border: 1px solid red;
     flex: 1;
     width: 79.39%;
-    height: 1000px;
 }
 
 /* Photo Content */
@@ -129,44 +135,99 @@ h1, h2, h3, h4, h5, h6 {
 
 /* buttons article */
 
-
-
-.most-popular h2 {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 34px;
-    margin-bottom: 29px;
+.gradient-buttons {
+    display: flex;
+    gap: 30px;
 }
-
-.most-popular .btn {
-    border-radius: 43px;
-    border: none;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    color: #FFFFFF;
-    text-align: center;
-}
-.most-popular .btn-one {
+.gradient-buttons a {
+    display: inline-flex;
+    align-items: center;
+    background: #5b5f5f;
     padding: 14px 38px;
-    margin-right: 21.37px;
-    box-shadow: 0px 2px 6px rgba(250, 119, 176, 0.55);
-    background: linear-gradient(127deg,#ffd074 31%, #fa68be 73%);
+    border-radius: 43px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: #FFFFFF;
+    text-decoration: none;
+    width: auto;
+    
 }
-.most-popular .btn-two {
-    padding: 13px 31px 14px 30px;
-    margin-right: 33.37px;
-    background: linear-gradient(90deg, #68FAF8 0%, #74FBB4 100%);
-    box-shadow: 0px 2px 6px rgba(67, 247, 169, 0.55);
+
+/* cards sections */
+
+.page-section {
+    margin-bottom: 70px;
 }
-.most-popular .btn-three {
-    padding: 13px 29px 14px 30px;
-    margin-right: 33.37px;
-    background: linear-gradient(90deg, #F57E86 0%, #9ECEEF 100%);
-    box-shadow: 0px 2px 6px rgba(151, 179, 217, 0.55);
-} 
-.most-popular .btn-four {
-    padding: 13px 29px 14px 30px;
-    background: linear-gradient(90deg, #F57E86 0%, #9ECEEF 100%);
-    box-shadow: 0px 2px 6px rgba(151, 179, 217, 0.55);
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+.section-heading h2 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.deals-wrapper {
+    display: flex;
+    gap: 2.07%;
+}
+
+.deal-card {
+    flex: 1;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 15px;
+}
+
+.deal-image {
+    display: block;
+    height: 170px;
+    background-color: #5b5f5f;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 10px;
+}
+
+.deal-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #5CB5B0;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+    margin-bottom: 3px;
+}
+
+.deal-card h4 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 1.429rem;
+}
+
+.deal-card p {
+    margin: 0;
+    margin-bottom: 14px;
+    color: #808080;
+    font-weight: 400;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-footer a {
+    padding: 9px 16px;
+    border-radius: 83px;
+    background-color: #F7BF4D;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
 }
