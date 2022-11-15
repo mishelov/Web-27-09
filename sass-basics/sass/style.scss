@@ -1,0 +1,63 @@
+$main-color: rgb(114, 105, 168);
+$heading-font: Arial, sans-serif;
+$body-font: Verdana, sans-serif;
+
+@mixin makeGradient {
+    
+}
+
+
+body {
+    font-family: $body-font;
+}
+
+
+
+h1 {
+    color: $main-color;
+    font-family: $heading-font;
+}
+
+p {
+    border: 1px solid $main-color;
+    padding: 10px;
+}
+
+button {
+    background: $main-color;
+    color: white;
+    font-family: $heading-font;
+}
+// main menu
+
+
+.menu {
+    margin-bottom: 20px;
+
+    ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            margin-right: 20px;
+
+            a {
+                display: block;
+                text-decoration: none;
+                background: #333;
+                color: #fff;
+                padding: 12px;
+                border-bottom: 3px solid #fff;
+                &:hover {
+                    background-color: $main-color;
+                }
+                &.selected {
+                    border-bottom-color: $main-color;
+                }
+            }
+        }
+    }
+}
+
